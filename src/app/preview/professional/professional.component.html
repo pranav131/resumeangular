@@ -1,0 +1,18 @@
+<div class="prof_div">
+  <div class="prof_title">
+    <h4>Professional</h4>
+  </div>
+  <div *ngFor="let xyz of Professional">
+      <div class="prof_details">
+          <h5><b>{{xyz.title}}</b></h5>
+          <ul>
+            
+            <li>{{xyz.company}}</li>
+            <li>{{xyz.year}}</li>
+            <li>{{xyz.iscurrentlyworking}}</li>
+            <li>{{xyz.description}}</li>
+      
+          </ul>
+        </div>
+  </div>
+  </div>

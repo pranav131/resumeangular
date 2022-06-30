@@ -1,0 +1,37 @@
+<div class="container-fluid">
+  <div class="row p-0">
+    <div class="col-12 pt-1 header">
+      <div class="header-info">
+        <div class="heading p-1">
+          <h2>Education</h2>
+        </div>
+        <div class="action p-2">
+          <div class="search-box">
+            <ng-template [ngIf]="!showSearchBox">
+              <button class="icon-btn btn-md icon-grey" matTooltip="Search" (click)="showSearch()" mat-icon-button>
+                <mat-icon>search</mat-icon>
+              </button>
+            </ng-template>
+            <ng-template [ngIf]="showSearchBox">
+              <mat-form-field>
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+              </mat-form-field>
+            </ng-template>
+          </div>
+          <div class="addButton">
+            <button (click)="openDialog()" class="icon-btn btn-md icon-grey" matTooltip="Add" mat-icon-button>
+              <mat-icon>add</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row p-0">
+    <div class="col-12 p-0">
+      <div class="datalist p-2">
+        <app-education-list [searchTerm]='searchTerm' [educations]="educations"></app-education-list>
+      </div>
+    </div>
+  </div>
+</div>

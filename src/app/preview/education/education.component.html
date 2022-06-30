@@ -1,0 +1,21 @@
+<div class="academic">
+  <div class="name">
+    <h3><b>{{Name}}</b></h3>
+    <hr>
+  </div>
+    <div class="education">
+      <h4>Education</h4>
+    </div>
+    <div *ngFor="let abc of Edu">
+        <div class="edu_details">
+          <h5><b>{{abc.title}}</b></h5>
+          <ul class="a">
+            
+            <li>{{abc.institute}}</li>
+            <li>{{abc.marks}}</li>
+          </ul>
+        </div>
+       
+      </div>
+    
+  </div>  

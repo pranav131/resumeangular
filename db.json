@@ -1,0 +1,28 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "title": "B.E.",
+      "institute": "LNCT",
+      "marks": 90
+    },
+    {
+      "id": 7,
+      "title": "New class",
+      "institute": "df",
+      "marks": 60
+    },
+    {
+      "id": 9,
+      "title": "Mtechjhjhh",
+      "institute": "kjk",
+      "marks": 90
+    },
+    {
+      "id": 11,
+      "title": "abcdfe",
+      "institute": "sdf",
+      "marks": 67
+    }
+  ]
+}
