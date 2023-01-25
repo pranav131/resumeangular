@@ -1,0 +1,45 @@
+<!-- The content below is only a placeholder and can be replaced.
+
+<button (click)="getdata()">click me</button>
+<div>
+  {{abcd}}
+</div>
+<div *ngFor="let post of posts">
+  <h1>{{post.title}}</h1>
+  <span>{{post.id}}</span>
+</div>
+<div *ngIf="isloading; else abc">
+  <img src="../assets/index.square-grid-loader.gif">
+  
+</div>
+<ng-template #abc>
+  .....................
+</ng-template>
+<div [ngSwitch]="val">
+  <p *ngSwitchCase="'hello'">
+    helloo
+  </p>
+  <p *ngSwitchCase="'hey'">
+    hey
+  </p>
+  <p *ngSwitchCase="'hellopeople'">
+    hello guys
+  </p>
+  <p *ngSwitchDefault>
+    bye
+  </p>
+</div>
+<p [ngClass]="marks > 5?'green':'red'">
+  {{marks}}
+</p>
+<p [class.red]="marks < 5" [class.green]="marks > 5">
+  {{marks}}
+</p>
+<p [ngStyle]="{'backgroundColor': marks > 5 ? 'green' : 'red' , 'fontSize': marks > 5 ? '22px' : '44px'}">
+color change..hurrayyyy
+</p>
+<app-preview [mydata]="posts" ></app-preview>-->
+
+<!-- <app-preview></app-preview> -->
+<router-outlet>
+</router-outlet> 

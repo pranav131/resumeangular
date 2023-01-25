@@ -1,0 +1,40 @@
+{
+  "education": [
+    {
+      "id": "1",
+      "title": "B.E.",
+      "institute": "LNCT",
+      "marks": 4
+    },
+    {
+      "id": "WzYNmnI",
+      "title": "abc",
+      "institute": "def",
+      "marks": 8
+    },
+    {
+      "id": "SDw-STQ",
+      "title": "edc",
+      "institute": "hkgjhf",
+      "marks": 45
+    },
+    {
+      "id": "x4nkJOi",
+      "title": "Angular ",
+      "institute": "ITE ",
+      "marks": 10
+    },
+    {
+      "id": "1Nw7P-3",
+      "title": "hfd",
+      "institute": "hgjfd",
+      "marks": 8
+    },
+    {
+      "id": "bv8cXrK",
+      "title": "ihyidg",
+      "institute": "khahd",
+      "marks": 5
+    }
+  ]
+}

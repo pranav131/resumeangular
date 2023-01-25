@@ -1,0 +1,19 @@
+.header-info{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    height:100px;
+    background-color: #f5f5f5;
+    align-items: center;
+}
+.action{
+    display: flex;
+    justify-content: space-between;
+}
+.addButton{
+    margin-left: 20px;
+}
+.datalist{
+    height:100%;
+    width:100%;
+}

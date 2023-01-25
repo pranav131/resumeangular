@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <div class="row p-0">
+    <div class="col-12 p-0">
+      <div class="wrapper">
+        <div class="side-bar">
+          <div class="user-avatar">
+            <ngx-avatar name="Pranav Shukla" size="50" src="../assets/IMG_20210507_220821-min.jpg" (clickOnAvatar)="avatarClicked($event)"></ngx-avatar>
+          </div>
+          <div class="menu-items">
+            <ul class="navbar-items">
+              <li class="nav-item">
+                <button routerLink="education" class="icon-btn icon-white" matTooltip="Education" matTooltipPosition="right" mat-icon-button>
+                  <mat-icon>school</mat-icon>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button routerLink="profession" class="icon-btn icon-white" matTooltip="Professional" matTooltipPosition="right"
+                  mat-icon-button>
+                  <mat-icon>business_center</mat-icon>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button routerLink="skills" class="icon-btn icon-white" matTooltip="Skills" matTooltipPosition="right" mat-icon-button>
+                  <mat-icon>class</mat-icon>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button routerLink="hobbies" class="icon-btn icon-white" matTooltip="Hobbies" matTooltipPosition="right" mat-icon-button>
+                  <mat-icon>directions_bike</mat-icon>
+                </button>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        
+        <div class="content-bar">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
