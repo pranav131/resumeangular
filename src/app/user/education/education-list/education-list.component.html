@@ -1,25 +1,29 @@
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
     <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef> Title </th>
+      <th mat-header-cell *matHeaderCellDef><h4>Title</h4> </th>
       <td mat-cell *matCellDef="let element"> {{element.title}} </td>
     </ng-container>
   
     <!-- Weight Column -->
     <ng-container matColumnDef="institute">
-      <th mat-header-cell *matHeaderCellDef> Institute </th>
+      <th mat-header-cell *matHeaderCellDef><h4>Institute/College</h4></th>
       <td mat-cell *matCellDef="let element"> {{element.institute}} </td>
+    </ng-container>
+    <ng-container matColumnDef="unv">
+      <th mat-header-cell *matHeaderCellDef> <h4>University/Board </h4></th>
+      <td mat-cell *matCellDef="let element"> {{element.unv}} </td>
     </ng-container>
   
     <!-- Symbol Column -->
     <ng-container matColumnDef="marks">
-      <th mat-header-cell *matHeaderCellDef> Grade </th>
+      <th mat-header-cell *matHeaderCellDef><h4> Grade/Percentage</h4> </th>
       <td mat-cell *matCellDef="let element"> {{element.marks}} </td>
     </ng-container>
 
      <!-- Symbol Column -->
      <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <th mat-header-cell *matHeaderCellDef><h4> Action </h4></th>
         <td mat-cell *matCellDef="let element"> 
             <button  class="icon-btn btn-md icon-grey"(click)="openDeleteDialog(element)" matTooltip="Delete" mat-icon-button>
                 <mat-icon>delete_outline</mat-icon>

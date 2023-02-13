@@ -20,12 +20,12 @@ export class EducationListComponent implements OnInit, OnChanges {
   constructor(private http: HttpClient, private eduService:EducationService,
     private dialog: MatDialog) { }
   @Input() searchTerm: string;
-  displayedColumns: string[] = ['title', 'institute', 'marks', 'action'];
+  displayedColumns: string[] = ['title', 'institute','unv', 'marks', 'action'];
   dataSource = new MatTableDataSource();
   education = [
-    { title: 'Graduation', institute: 'Lakshmi Narain College of Technology', marks: '8.15 CGPA' },
-    { title: 'Higher secondary', institute: 'K.P. Hindu Inter College', marks: '83.6%' },
-    { title: 'High school', institute: 'St. Anthony\'s Inter College', marks: '88.6%' }
+    { title: 'Graduation', institute: 'Lakshmi Narain College of Technology, Bhopal',unv:'Rajiv Gandhi Proudhyogiki Vishwavidyalaya, Madhya Pradesh', marks: '8.15/10' },
+    { title: 'Higher secondary', institute: 'K.P. Hindu Inter College, Pratapgarh',unv:'Board of High School and Intermediate Education, Uttar Pradesh', marks: '83.6%' },
+    { title: 'High school', institute: 'St. Anthony\'s Inter College, Pratapgarh',unv:'Board of High School and Intermediate Education, Uttar Pradesh', marks: '88.6%' }
   ];
   ngOnInit() {
     //this.eduService.getAll().subscribe((res:Education[])=>{
